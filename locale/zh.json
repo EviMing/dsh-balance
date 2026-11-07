@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "账号余额接口",
+    "description": "在 GET /api/balance 返回 DeepSeek Harness 账号额度余额，一条本地 HTTP 请求即可取到。"
+  }
+}
