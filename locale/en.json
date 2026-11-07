@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Account Balance Endpoint",
+    "description": "Serves the DeepSeek Harness account credit balance at GET /api/balance, one loopback request for scripts and dashboards."
+  }
+}
