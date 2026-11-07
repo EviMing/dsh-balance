@@ -1,0 +1,8 @@
+# dsh-balance bundle patch: mounts the Host half that serves
+#   GET /api/balance
+# on the profile's own web server. Loopback callers only; the upstream wallet
+# is read through the harness `deepseekAccount` service, so DSH keeps owning
+# the credential and its expiry handling.
+- insert:
+    - id: dsh-balance
+      name: 'dsh-balance'
