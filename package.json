@@ -1,0 +1,47 @@
+{
+  "name": "dsh-balance",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "One-request HTTP endpoint that returns the DeepSeek Harness account balance: the platform.deepseek.com wallet shown under Settings → Account.",
+  "author": "EviMing",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EviMing/dsh-balance.git"
+  },
+  "homepage": "https://github.com/EviMing/dsh-balance#readme",
+  "bugs": {
+    "url": "https://github.com/EviMing/dsh-balance/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "balance",
+    "wallet",
+    "account",
+    "endpoint"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
